@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+html {
+  font-size: 16px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+.google-header {
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+}
+nav .text-link {
+  display: none;
+}
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-item .text-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+}
+.nav-item .text-link:hover {
+  text-decoration: underline;
+}
+.img-button {
+  border: none;
+  background: transparent;
+}
+.img-button img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fa-ellipsis-vertical {
+  padding-left: 0.1rem;
+}
+.icon-link {
+  display: inline-block;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  font-size: 1.1rem;
+}
+.icon-link:hover {
+  background-color: rgb(235, 235, 235);
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+h1 {
+  font-size: 5rem;
+}
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  border: 1px solid rgb(235, 235, 235);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.input-bar:hover,
+.input-bar:focus-within,
+.button-grid button:hover {
+  box-shadow: 0 0 4px 1px rgb(235, 235, 235);
+}
+.input-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.input-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input-icon-button {
+  background: transparent;
+  border: none;
+}
+.input-icon-button:hover {
+  opacity: 0.6;
+}
+.button-grid {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.button-grid button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(247, 247, 247);
+  background: rgb(247, 247, 247);
+}
+
+.button-grid button:hover {
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.language-text {
+  font-size: 0.8rem;
+}
+.language-link {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+.language-link:hover {
+  text-decoration: underline;
+}
+footer {
+  background: rgb(235, 235, 235);
+  font-size: 0.7rem;
+}
+footer > div {
+  padding: 1rem;
+}
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 640px) {
+  nav .text-link {
+    display: block;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .footer-grid {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
